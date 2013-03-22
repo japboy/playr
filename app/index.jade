@@ -1,0 +1,18 @@
+extends _layout
+
+block title
+  title= name
+
+block metas
+  meta(name='keywords', content='key1,key2,key3')
+  meta(name='description', content=description)
+
+block styles
+  link(rel='stylesheet', href='./css/app.min.css')
+
+block body
+  section#main(role='main')
+    div#player
+
+block scripts
+  script(src='./js/app.min.js', charset='UTF-8')

@@ -1,0 +1,30 @@
+@import 'nib'
+
+@keyframes boom
+  0%
+    -webkit-filter: blur(1px) sepia(100%)
+  30%
+    -webkit-filter: blur(1px) sepia(100%)
+    -webkit-filter: hue-rotate(0deg)
+  60%
+    -webkit-filter: hue-rotate(120deg)
+  90%
+    -webkit-filter: blur(9px) sepia(0%)
+    -webkit-filter: hue-rotate(360deg)
+  100%
+    -webkit-filter: blur(10px) sepia(0%)
+
+body
+  background-color: white
+
+#main
+  height: 100%
+  overflow: hidden
+  position: absolute
+  width: 100%
+
+#player
+  animation: 0.6s boom infinite alternate
+  left: 50%
+  position: absolute
+  top: 50%
